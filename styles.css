@@ -1,0 +1,69 @@
+/* Simple Blue & White Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid white;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* Project Images */
+.project-img {
+    max-width: 100%;
+    border: 1px solid #dee2e6;
+    margin: 15px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    header, footer {
+        padding: 15px;
+    }
+}
+
+/* إضافة أنميشن للأيقونات عند التحويم */
+.social-links a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    text-decoration: none;
+}
+
+/* ألوان خاصة لكل أيقونة عند التحويم */
+.social-links a:hover i.bi-twitter {
+    color: #1DA1F2 !important;
+}
+
+.social-links a:hover i.bi-github {
+    color: #6cc644 !important;
+}
+
+.social-links a:hover i.bi-linkedin {
+    color: #0077b5 !important;
+}
+
+.social-links a:hover i.bi-instagram {
+    color: #E1306C !important;
+}
+
+.social-links a:hover i.bi-envelope-fill {
+    color: #D44638 !important;
+}
